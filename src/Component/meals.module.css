@@ -1,0 +1,12 @@
+.meals{
+    max-width: 30%;
+    min-width: 200px;
+    /* background-color: hsla(240, 23%, 6%, 0.336); */
+    margin: 1%;
+}
+
+@media screen and (max-width: 655px) {
+    .subheader{
+        display: none;
+    }
+  }
