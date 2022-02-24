@@ -16,7 +16,10 @@ const Meals = (props) => {
         onMouseEnter={()=>setheaderHoverColor({...headerHoverColor,textShadow:'0 0 6px white'})}
         onMouseLeave={()=>setheaderHoverColor({...headerHoverColor,textShadow:''})}
         >
-            <i className={props.icon} onClick={()=>setopenPopUp(true)}></i>
+            <i className={props.icon} onClick={()=>{
+                setopenPopUp(true)
+                setheaderHoverColor({...headerHoverColor,textShadow:''})
+            }}></i>
             <h3 style={headerHoverColor}>{props.header}</h3>
             <p className={style.subheader}>{props.subheader}</p>
             
